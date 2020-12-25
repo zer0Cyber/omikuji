@@ -1,0 +1,28 @@
+h1 {
+  color: #f00;
+}
+
+span {
+  color: #000;
+  font-size: 25px;
+}
+
+#main {
+  margin: 5px;
+  padding: 5px;
+}
+
+p {
+  margin: 5px;
+  padding: 5px;
+  background: #fff;
+}
+
+#omikuji_btn {
+  cursor: pointer;
+}
+
+.daikichi {
+  font-size: 30px;
+  color: #f00;
+}
