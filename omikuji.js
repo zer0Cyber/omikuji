@@ -1,8 +1,12 @@
 'use strict';
 
 window.onload = function () {
-    const btn = document.querySelector('#omikuji_btn');
-    btn.onclick = () => {
+    // const btn = document.getElementById('omikuji_btn');
+    const box = document.getElementById('omikujiBox');
+
+    box.addEventListener('click', () => {
+      box.classList.toggle('buruburu');
+
       let list1 = ['大吉', '中吉', '小吉', '末吉', '吉','凶'];
       let rand = Math.floor(Math.random() * 100);
       const result = document.getElementById('view');
@@ -23,5 +27,11 @@ window.onload = function () {
         result.classList.remove('daikichi');
         result.textContent = list1[4];
       }
-    }
+    })
+
+
+    // 音（カタカタいうとか）
+    // セットタイムアウトで時間で結果表示
+
+  
   }
