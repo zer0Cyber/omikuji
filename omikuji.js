@@ -1,17 +1,23 @@
 'use strict';
 
-window.onload = function () {
-    // const btn = document.getElementById('omikuji_btn');
-    const box = document.getElementById('omikujiBox');
 
-    box.addEventListener('click', () => {
+
+
+window.onload = function () {
+  const box = document.getElementById('omikujiBox');
+  
+  // Playing music
+  
+  box.addEventListener('click', () => {
+      const music = new Audio('syakasyaka.mp3');
+      music.play();
       box.classList.add('buruburu');
-      setTimeout(omikuji, 3000);
-      setTimeout(animete, 3000);
+      setTimeout(omikuji, 2000);
+      setTimeout(animete, 2000);
     })
 
     const animete = () => {
-      box.classList.remove('buruburu')
+      box.classList.remove('buruburu');
     }
 
     
@@ -37,11 +43,5 @@ window.onload = function () {
           result.textContent = list1[4];
         }
       }
-      
-      
-      
-      // 音（カタカタいうとか）
-    // セットタイムアウトで時間で結果表示
-
   
   }
