@@ -25,7 +25,6 @@ window.onload = function () {
       box.classList.remove('buruburu');
     }
 
-    
     const omikuji = () => {
       let rand = Math.floor(Math.random() * 100);
 
@@ -33,7 +32,7 @@ window.onload = function () {
         view.innerHTML = list[0];
         view.style.color = 'white';
         message.innerHTML = daikichi[Math.floor(Math.random() * daikichi.length)];
-      } else if (rand <= 25) {
+        } else if (rand <= 25) {
         view.innerHTML = list[1];
         view.style.color = 'white';
         message.textContent = chukichi[Math.floor(Math.random() * chukichi.length)];

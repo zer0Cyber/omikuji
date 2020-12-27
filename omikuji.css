@@ -47,7 +47,6 @@ body {
   color: #000;
 }
 
-
 .ex1 {
   position: relative;
   display: inline-block;
@@ -58,7 +57,6 @@ body {
   color: #555;
   font-size: 16px;
   background: rgba(255, 255, 255, 0.9);
-  ;
 }
 
 .ex1 :before {
