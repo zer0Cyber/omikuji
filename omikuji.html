@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="omikuji_Image/logo.png">
   <link rel="stylesheet" href="omikuji.css">
-  <title>おみくじ</title>
+  <title>おみくじ | 神様に会おう</title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="omikuji.js"></script>
 </head>
 
 <body>
@@ -14,6 +16,14 @@
       <img class="logo-img" src="omikuji_Image/logo.png"/>
     </div>
   </header>
+  <div class="alert">
+    <script>
+      swal({
+          title: 'おみくじエリアへようこそ',
+          text: '今年のあなたの運勢を占おう'
+      });
+    </script>
+  </div>
   <section>
     <div class="container">
       <div class="ex1"><p>箱をクリック</p></div>
@@ -27,8 +37,5 @@
       </div>
     </div>
   </section>
-  <script src="omikuji.js"></script>
-
 </body>
-
 </html>
