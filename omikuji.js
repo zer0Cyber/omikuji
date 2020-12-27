@@ -27,19 +27,11 @@ window.onload = function () {
 
     
     const omikuji = () => {
-      // let list = ['大吉', '中吉', '小吉', '吉', '凶'];
-      // let daikichi = ['おもいがけないサプライズが！','宝くじを買ってみる？','ケーキ買って帰ろう♪'];
-      // let chukichi = ['ディズニーでスタンバイパスが取れるかも？', 'アノ人から電話がかかってくるよ', 'ふわふわの卵焼きが作れそう'];
-      // let shokichi = ['あしたは晴れるね','お年玉がもらえるかも？','早起きできそう！'];
-      // let kichi =  ['マスク忘れてない？', '今日できないことは明日にしよう', '身だしなみを整えたらいいことが…！？'];
-      // let kyo = ['あれ？ニキビできた？','マスクのひも切れた？',	'歯に青のりついてるよ？'];
-
       let rand = Math.floor(Math.random() * 100);
 
-  
-      if (rand <= 10) {
+      if (rand <= 80) {
         view.innerHTML = list[0];
-        view.style.color = 'red';
+        view.style.color = 'white';
         message.classList.add('daikichi');
         message.innerHTML = daikichi[Math.floor(Math.random() * daikichi.length)];
       } else if (rand <= 25) {
@@ -64,5 +56,4 @@ window.onload = function () {
           message.textContent = kyo[Math.floor(Math.random() * kyo.length)];
         }
     }
-  
   }
