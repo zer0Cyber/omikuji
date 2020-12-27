@@ -32,27 +32,22 @@ window.onload = function () {
       if (rand <= 80) {
         view.innerHTML = list[0];
         view.style.color = 'white';
-        message.classList.add('daikichi');
         message.innerHTML = daikichi[Math.floor(Math.random() * daikichi.length)];
       } else if (rand <= 25) {
         view.innerHTML = list[1];
         view.style.color = 'white';
-        message.classList.remove('daikichi');
         message.textContent = chukichi[Math.floor(Math.random() * chukichi.length)];
         } else if (rand <= 45) {
           view.innerHTML = list[2];
           view.style.color = 'white';
-          message.classList.remove('daikichi');
           message.textContent = shokichi[Math.floor(Math.random() * shokichi.length)];
         } else if (rand <= 80) {
           view.innerHTML = list[3];
           view.style.color = 'white';
-          message.classList.remove('daikichi');
           message.textContent = kichi[Math.floor(Math.random() * kichi.length)];
         } else if (rand <= 100) {
           view.innerHTML = list[4];
           view.style.color = 'white';
-          message.classList.remove('daikichi');
           message.textContent = kyo[Math.floor(Math.random() * kyo.length)];
         }
     }
